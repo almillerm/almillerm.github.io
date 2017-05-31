@@ -1,0 +1,430 @@
+@font-face {font-family: Segoe;    
+src: url('fonts/SegoeWPN.ttf'); /* IE9 */ 
+ font-weight: normal;
+font-style: normal; }
+
+@font-face {font-family: AlteHaasGrotesk;    
+src: url('fonts/AlteHaasGroteskBold.ttf'); /* IE9 */ 
+ font-weight: normal;
+font-style: normal; }
+
+@font-face {font-family: univers;    
+src: url('fonts/univers-lt-45-light.otf'); /* IE9 */ 
+ font-weight: normal;
+font-style: normal; }
+
+
+
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #7e7f84;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+	font-family: 'univers'; 
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #f45a40;
+	text-decoration: underline;
+}
+a:hover {
+	color: #f45a40;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #f45a40;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+
+.center-block-main{
+	max-width:1020px; margin:0 auto;}
+
+header {background: rgba(255,255,255,0.8);
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+font-family: 'Segoe', sans-serif;}
+
+.header {padding:15px 0 20px 0;}
+
+.logo{float:left;}
+
+.menu {float:right; 
+    margin-top: 25px;}
+
+.menu li{float:left; 
+    margin-right:30px; 
+    font-size:1.061em;}
+
+.menu li a{color: #454545; 
+    text-decoration:none;
+padding: 20px 10px;}
+
+.menu li a:hover{color:#de6d6e;}
+	
+.login {border-radius: 3px;
+background: #de6d6e;}
+
+li.login a {color:#fff;
+}
+
+li.login a:hover{text-decoration: underline;
+color: #fff;}
+
+li.login img {margin-left: 5px;
+cursor: pointer;}
+
+.banner {background: url(../images/banner.jpg);
+    background-size: cover;}
+
+.banner-decor {text-align: center;
+padding: 20% 0 25px 0;}
+
+.banner-text { 
+  text-align: center;
+padding-bottom: 100px;}
+
+	.banner-text  h2{  
+        font-weight:300; 
+        line-height:1.1; 
+        color: #fff;
+        margin-bottom: 15px;
+        font-size: 4.186em;
+        text-transform: uppercase;
+        font-family: 'AlteHaasGrotesk';}
+
+	.banner-text  p{ 
+        font-size:1.562em; 
+        color: #fff; 
+        font-weight: 300;}
+
+.block4-section {padding: 30px 0;}
+
+.block4-section>h2 {font-size: 2.187em;
+text-align: center; 
+color: #404040;
+padding: 50px 0 15px 0;}
+
+.block4-section>p {font-size: 1.062em;
+text-align: center;
+margin-bottom: 100px;
+color: #636363;}
+
+.block4-main{}
+
+.block4-main article{position: relative;
+    width:23%; 
+    margin-left:2.6%; 
+    float:left;}
+
+.block4-main article:first-child{margin-left:0;}
+
+.block4-main article img{
+    display:block; 
+    margin:0 auto;}
+
+.block4-main article span {position: absolute;
+    color: #fff;
+    font-size: 0.75em;
+    left: 100px;
+    top: 135px;
+padding: 5px 0;}
+
+.block4-main .info{display: none;
+    color: #fff;
+    position: absolute;
+    font-size:0.75em; 
+    width: 50%;
+    text-align: center;
+    left: 60px;
+   top: 40px;}
+
+
+.block4-main article img:hover~.info,.info:hover{display: block;}
+
+.block4-main article:nth-child(3) .info{display: block;}
+
+.section-4block {border: 2px solid #e9e9e9;}
+
+.news{padding: 20px 0;
+    display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: stretch;}
+
+
+.news-section img{float: left;
+padding: 10px 20px;
+margin-bottom: 50px;}
+
+.news-section h2{font-size: 1.687em;
+color: #404040;
+padding: 10px;}
+
+.news-section p{color: #8b8b8b; 
+font-size: 0.937em;
+padding: 5px 5px 30px 5px;
+text-align: justify;}
+
+.footer{background:url(../images/footer-img.jpg) repeat;}
+
+.footer-block-content{padding-bottom: 20px;}
+
+.footer-block-content h2{color: #8b8b8b; 
+        font-size:1.312em;
+        padding: 30px 5px 20px 5px;}
+
+.footer-block-content ul {list-style-type: none;}
+
+.footer-block-content ul li {color: #8b8b8b;
+		font-size:0.937em; 
+        margin-bottom:10px;
+    padding: 5px;}
+
+.footer-block-content{ float: left;
+width:10%; 
+margin-left:5%;}
+
+.footer-block-content a{text-decoration:none; 
+    color: #8b8b8b;}
+
+.footer-block-content a:hover{text-decoration:underline;}
+
+.footer .link{float: right;
+margin-top: 10px;}
+
+.footer .link ul li{float: left;
+list-style-type: none;
+padding: 30px 15px 20px 15px;}
+
+.footer .link p {padding: 5px 25px;}
+
+
+
+/*object {max-width: 30%;}
+
+object circle{fill:#696b6a;}
+
+object path{fill:rgba(37,40,37,1);}*/
+
+/*-------------------------------------------*/
+	
+@media screen and (max-width:900px){
+    
+    .logo{padding-left: 10px;}
+    
+    .block4-section>p{padding: 0 10px;}
+    
+	.block4-main article{
+			width:45%;
+        margin:0 2.5% 30px 2.5%; 
+        float:left;}
+    
+		.block4-main article:first-child{
+			margin:0 2.5% 30px 2.5%;}
+    
+    .block4-main article span {
+    left: 180px;}
+
+.block4-main .info{
+    width: 40%;
+    left: 120px;
+   top: 60px;}
+    
+    .news-section{
+padding-right:10px;}}
+
+@media screen and (max-width:740px){
+    
+	.block4-main article span {
+    left: 150px;}
+
+.block4-main .info{
+    width: 40%;
+    left: 100px;
+   top: 50px;}
+    
+    footer article {max-width: 30%;}}
+
+
+@media screen and (max-width:600px){
+    .block4-main article span {
+    left: 120px;}
+
+.block4-main .info{
+    left: 80px;
+   top: 30px;}
+    
+    .banner-decor{padding-top: 25%;}}
+
+@media screen and (max-width:480px){
+	.logo{float:none;
+    text-align:center;}
+
+.menu {float:none; 
+    margin: 25px 0 0 25px;}
+
+.menu li{ 
+    margin-right:30px;
+    margin-bottom: 10px;}
+    
+     .banner-decor{padding-top: 40%;
+    max-width: 90%;}
+    
+	.block4-main article{
+			width:95%; 
+        margin:0 2.5% 30px 2.5%; 
+        float:none; 
+        overflow:hidden;}
+    
+		.block4-main article:first-child{
+			width:95%; 
+            margin:0 2.5% 30px 2.5%; 
+            float:none;}
+    
+        .block4-main article span {
+    left: 210px;}
+
+.block4-main .info{width: 30%;
+    left: 160px;
+   top: 40px;}
+    
+.news-section img{margin-bottom: 5px;}
+
+.footer-block-content ul li { padding: 5px 10px 5px 5px;}
+
+.footer-block-content{ float: left;
+width:15%; 
+margin-left:10%;}
+    
+footer article {max-width: 100%;}
+    
+.footer .link{float: none;}
+    
+    .footer .link p{text-align: center;}}
+
+@media screen and (max-width:410px){
+	.logo{float:none; 
+        text-align:center; 
+        margin-bottom:10px;}
+    
+    .banner-text  h2{ padding-top: 45%;
+        margin-bottom: 15px;
+        font-size: 3.986em;}
+
+	.banner-text  p{ font-size:1.362em; }
+
+    .banner-decor{display: none;}
+    
+	.block4-main article span {
+    left: 170px;}
+
+.block4-main .info{width: 30%;
+    left: 140px;
+   top: 40px;}
+    
+    .footer-block-content:first-child{margin-left:10px;}
+    .footer .link ul {margin-left: 50px;}}
+    
+@media screen and (max-width:360px){
+    .banner-text  h2{ padding-top: 55%;}
+    
+    .block4-main article span {
+    left: 150px;}
+
+.block4-main .info{width: 30%;
+    left: 120px;
+   top: 30px;}
+    
+    .footer .link ul li{
+padding: 30px 10px 20px 10px;}
+}
+
+@media screen and (max-width:320px){
+    .banner-text  h2{ padding-top: 60%;}
+    
+    .block4-main article span {
+    left: 125px;}
+
+.block4-main .info{width: 30%;
+    left: 105px;
+   top: 30px;
+font-size: 0.70em;}
+    
+    .footer .link ul li{
+padding: 30px 5px 20px 5px;}
+}
