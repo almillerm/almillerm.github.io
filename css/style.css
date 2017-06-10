@@ -228,7 +228,8 @@ max-width:100%;}
 margin: 20px;
 max-width:100%;}
 
-.about-text ul{list-style: none;
+.about-text ul{display: inline-block; /*android browser*/
+    list-style: none;
 display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -245,11 +246,9 @@ padding: 0 10px;
 max-width: 100%;}
 
 .about-text ul li{max-width: 20%;
-display: inline-block; /*android browser*/
 display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-flex-wrap: wrap;}
+    display: flex;}
 
 i {font-size: 3em;}
 
