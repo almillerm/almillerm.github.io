@@ -1,0 +1,495 @@
+@font-face {font-family: Belinda;
+     src:url("../fonts/belinda.otf");
+     font-weight:normal;font-style:normal;}
+
+@font-face {font-family: Nexa;
+     src:url("../fonts/nexa-regular.otf");
+     font-weight:normal;font-style:normal;}
+
+@font-face {font-family: NexaBlack;
+     src:url("../fonts/nexa-black.otf");
+     font-weight:normal;font-style:normal;}
+
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                              
+	vertical-align: baseline;          
+	background: transparent;      
+	font-size: 100%;                     
+}
+a {                                      
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			
+} 
+input, select, button, textarea {
+	margin: 0; 				
+	font-size: 100%; 			
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				
+}
+input[type="checkbox"] { 		
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%;
+}
+body {
+	color: #787b80;
+	text-align: left;
+	font-size: 1em; 
+	min-height:100%;
+	/*font-family: 'Ubuntu', sans-serif;
+font-family: 'Open Sans', sans-serif;
+    font-family: 'Cabin', sans-serif;*/
+font-family: 'PT Sans', sans-serif;
+}
+a, a:visited {
+	color: #50c3af;
+	text-decoration: underline;
+}
+a:hover {
+	color:#50c3af;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #50c3af;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+
+.center-align{
+	max-width:1000px; 
+    margin:0 auto;}
+
+.banner{background: url(../images/img1.jpg);
+   background-size: cover;
+    position: relative;
+padding-bottom: 25%;}
+
+.banner-text {text-align: center;
+padding-top: 50px;color: #fff;}
+
+.logo{ font-family:"Belinda";
+    font-size:3.25em;
+    color: #fff;
+text-align: center;}
+
+.menu {display: inline-block;
+    text-align: center;
+        margin: 50px 0 25px;}
+
+.menu li{float:left; 
+        margin-right:33px;}
+
+.menu li a{color: #fff; 
+                text-decoration:none;
+                text-transform: uppercase;
+                font-size: 0.8125em;
+                font-family: 'Open Sans', sans-serif; }
+
+.menu li a:hover{text-decoration: underline;}
+	
+
+	.banner h2{ font-family: 'Ubuntu', sans-serif;
+        font-size: 3.3125em; 
+        font-weight:700;  
+        color: #fff;
+padding: 50px 10px 20px;}
+
+.banner  p{padding: 15px; 
+        font-size:1em; 
+        font-weight: 700;}
+
+.title {
+  overflow: hidden;
+}
+.title:before,
+.title:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 100px;;
+  height: 3px;
+  background: rgba(255,255,255,0.5);
+  border-width: 0 10px;
+    margin: 0 15px;}
+
+.title:before {
+  margin-left: -10%;}
+
+.title:after {
+  margin-right: -10%;}
+
+
+a.banner-btn {display: inline-block;
+    color:#fff; 
+    text-decoration:none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9275em;
+    font-weight: 700;
+    padding: 10px 50px;
+    border: 1px solid #50c3af;
+    background: #50c3af;
+border-radius: 50px; 
+margin-top: 30px;}
+
+a.banner-btn i{margin-left: 5px;
+font-size: 1em;}
+
+a.banner-btn:hover {color: #50c3af;
+    border: 1px solid #50c3af;
+background: #fff;
+transition: 1s ease;}
+
+	
+.block3-section {background: #eeeeef;
+padding: 70px 0 50px 0;}
+
+
+.block3-main article{
+		width:30%; 
+        float:left; 
+        margin-left:5%;
+        text-align: center;}
+
+	.block3-main article:first-child{
+		margin-left:0;}
+
+	.block3-main article h2{
+        font-size: 1em;
+        margin-bottom:20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #384048;}
+
+.block3-main article  i{font-size: 1.6em;
+    color: #50c3af;
+margin-bottom: 20px;}
+
+.block3-main article p {font-size:0.875em; 
+padding: 10px;
+color:  #787b80;
+text-align: center;}
+
+.block2-main{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;}
+
+.block2-main article{width: 45%;
+margin: 10px 20px;
+margin-left: 10%;}	
+
+.block2-main article img{display: block;
+}
+
+.block2-main article h2{display: inline-block;
+    color: #384048;
+font-size:1.125em;
+font-weight: 700;
+padding: 20px 0;
+margin-top: 20px;
+border-bottom: 2px solid #ebecec;}
+
+.block2-main article p{text-align: justify;
+padding: 20px 0px;}
+
+.block2-main .read-more {display: inline-block;
+color: #fff;
+background: #50c3af;
+text-decoration: none;
+padding:10px 20px;
+border-radius: 50px;
+border: 1px solid #50c3af;}
+
+a.read-more:hover {color: #50c3af;
+    border: 1px solid #50c3af;
+background: #fff;
+transition: 1s ease;}
+
+
+.text-section {background: #eeeeef;}
+
+.text-article{padding: 0 10px;}
+
+.text-section .icon-megaphone {font-size: 1.2em;
+margin-right: 10px;}
+
+.text-section h2{display: inline-block;
+color: #384048;
+font-size:1.125em;
+font-weight: 700;
+    text-transform: uppercase;
+padding: 20px 10px;
+margin: 20px 0;
+border-bottom: 2px solid #e2e3e4;}
+
+.text-section p{color: #787b80;
+font-size: 0.875em;
+padding: 10px 10px 20px;}
+
+.read-more-btn{display: inline-block;
+color: #fff;
+background: #d2d5da;
+text-decoration: none;
+padding:10px 20px;
+border-radius: 50px;
+border: 1px solid #d2d5da;
+margin-bottom: 50px;}
+
+a.read-more-btn:hover {color: #50c3af;
+    border: 1px solid #50c3af;
+background: #fff;
+-webkit-transition: 1s ease;
+    transition: 1s ease;}
+
+.section-post{background: #fff;
+padding: 40px 10px;}
+
+.section-post article{text-align: left;}
+
+.section-post article h2{text-align: justify;
+display: inline-block;
+color: #384048;
+font-size:1.125em;
+font-weight: 700;
+    text-transform: uppercase;
+padding: 20px 5px;
+margin: 20px 0;
+border-bottom: 2px solid #e2e3e4;}
+
+.section-post article p{color: #787b80;
+font-size: 0.875em;
+padding: 10px 0;
+text-align: left;}
+
+.check-link{text-align: justify;
+text-decoration: none;
+font-size: 0.875em;
+margin-bottom: 50px;}
+
+.check-link .icon-angle-right{font-size: 0.9em;
+margin-left: 5px;}
+
+.check-link:hover{text-decoration: underline;}
+
+.check-link:hover .icon-angle-right{text-decoration: none;}
+
+.icon-paper-plane,.icon-pen{color:#c6cbd1;
+font-size: 1.25em;
+margin-right: 10px;}
+
+.text-post{padding: 50px;}
+
+.text-post img{float: left;
+margin-right: 20px;}
+
+.text-post h2{text-align: justify;
+display: inline-block;
+color: #384048;
+font-size:1.125em;
+font-weight: 700;
+    text-transform: uppercase;
+padding: 5px;
+    margin-bottom: 20px;
+border-bottom: 2px solid #e2e3e4;}
+
+.text-post p{color: #787b80;
+padding: 0 0 20px;
+margin-bottom: 20px;}
+
+.lebel-section{background: #50c3af;
+color: #fff;
+padding: 50px 0 100px;}
+
+.lebel-section h2{text-transform: uppercase;
+    text-align: center;
+font-size:1.125em;
+font-weight: 700;
+padding: 5px;
+margin-bottom: 20px;
+border-bottom: 2px solid #61c8b6;}
+
+.lebel-section h2 i{margin-right: 10px;}
+
+.lebel-section ul{list-style-type: none;
+margin-top: 50px;}
+
+.lebel-section ul li{float: left;
+margin-left: 80px;
+font-size: 1.625em;
+padding: 10px;}
+
+.tech-crunch{font-family:"Belinda";}
+
+.promail{font-family:"Nexa";}
+
+.mashable{ font-family: 'Cabin', sans-serif;}
+
+.atlaspix{font-family:"NexaBlack";
+text-transform: lowercase;}
+
+
+
+.footer{background:#fff; 
+    padding:50px 0;}
+
+
+.footer p{font-size: 1.125em;
+padding: 5px;
+color: #bcbdbf;
+float: left;}
+.social-links{float: right;}
+.social-links ul{list-style-type: none;}
+
+.social-links ul li{float: left;
+margin-left: 10px;
+padding: 5px;}
+
+.social-links ul a{color: #bcbdbf;
+font-size: 1.225em;}
+
+.social-links ul a:hover{color: #50c3af;}
+
+
+.icon-google-plus{font-size: 1.225em;}
+
+
+@media screen and (max-width:740px){
+    
+    .lebel-section ul li{
+margin-left: 50px;
+padding: 5px;}}
+
+@media screen and (max-width:600px){
+    .logo{float: none;
+    text-align: center;}
+    
+	.banner-text {text-align: center;
+        padding-top: 30%; }
+    
+    .block3-main article{
+		width:95%; 
+        float:none; 
+        margin:0 2.5% 30px 2.5%;}
+    
+	.block3-main article:first-child{
+		 margin:0 2.5% 30px 2.5%;}
+    
+    .lebel-section ul li{
+margin-left: 50px;
+padding: 5px;
+    font-size: 1.12em;}
+    
+    .lebel-section ul li:first-child{margin-left: 20px;}
+    
+.section-post article{text-align: left;}
+    
+    .section-post article img{float: left;
+    margin-right: 20px;}}
+
+
+@media screen and (max-width:480px){
+    .banner-text { padding-top: 35%;}
+    
+    .menu li{margin:0 15px;}
+    
+	.lebel-section ul li{
+margin-left: 25px;
+padding: 5px;}}
+
+@media screen and (max-width:410px){
+    
+	.banner-text { padding-top: 40%;}
+    
+    .banner-text p{font-size: 0.89em;}
+    
+    .lebel-section ul li{
+margin-left: 15px;
+padding: 5px;
+    font-size: 0.9em;}
+}
+@media screen and (max-width:360px){
+
+	.banner-text { padding-top: 45%;}
+ 
+.title:before,
+.title:after {
+  content: '';
+  width: 30px;;
+}
+    .lebel-section ul{display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;}
+    
+    .lebel-section ul li{
+    font-size: 1em;}
+
+}
+@media screen and (max-width:320px){
+
+	.banner-text { padding-top: 50%;}
+}
