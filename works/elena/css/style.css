@@ -471,7 +471,8 @@ padding: 5px;
   content: '';
   width: 30px;;
 }
-    .lebel-section ul{display: -webkit-box;
+    .lebel-section ul{
+        display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
