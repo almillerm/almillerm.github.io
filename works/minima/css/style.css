@@ -6,7 +6,7 @@
      font-weight:normal;font-style:normal;}
 
  @font-face {font-family: Satellite;
-     src:url("../fonts/satellite.otf");
+     src:url("../fonts/satellite.otf") format('opentype');
      font-weight:normal;font-style:normal;}
 /* --------------- reset.css --------------- */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {

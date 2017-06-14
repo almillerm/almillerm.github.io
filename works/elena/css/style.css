@@ -1,13 +1,13 @@
 @font-face {font-family: Belinda;
-     src:url("../fonts/belinda.otf");
+     src:url("../fonts/belinda.otf") format('opentype');
      font-weight:normal;font-style:normal;}
 
 @font-face {font-family: Nexa;
-     src:url("../fonts/nexa-regular.otf");
+     src:url("../fonts/nexa-regular.otf") format('opentype');
      font-weight:normal;font-style:normal;}
 
 @font-face {font-family: NexaBlack;
-     src:url("../fonts/nexa-black.otf");
+     src:url("../fonts/nexa-black.otf") format('opentype');
      font-weight:normal;font-style:normal;}
 
 /* --------------- reset.css --------------- */
