@@ -67,18 +67,6 @@ body {
 width: 100%;
 font-family: 'Open Sans', sans-serif;}
 
-a, a:visited {
-	color: #f45a40;
-	text-decoration: underline;
-}
-a:hover {
-	color: #f45a40;
-	text-decoration:none;
-}
-a:focus, a:active {
-	color: #f45a40;
-	text-decoration: none;
-}
 h1, h2, h3, h4, h5, h6{
 	font-weight:normal;
     font-family: 'Lobster', cursive;
