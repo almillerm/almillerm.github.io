@@ -518,12 +518,17 @@ footer a:active{color: #85898f;}
 display: none; 
 cursor: pointer;}
 
-.menu_btn::after{content: '\2630';
-font-size: 30px;
+.menu_btn::after {
+    padding: 5px;
+    content: '\2630';
+    font-size: 30px;
     font-weight: 600;
     color: #95161f;
     position: relative;
-    left: 5px;}
+    /* left: 5px; */
+    /* margin: 0 auto; */
+    display: block;
+}
 
 .menu_btn:active{ background: #fff;}
 
