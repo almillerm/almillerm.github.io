@@ -421,6 +421,31 @@ text-align: center;}/*android browser*/
 .footer-bottom span{text-align: center;
 padding: 5px;}
 
+.scrollup {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.7;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    display: none;
+    background: #878787;
+   /* background: -webkit-gradient(linear, left bottom, left top, from(#e2e2e2), to(#d2d2d2));
+    background: linear-gradient(to top, #e2e2e2, #d2d2d2);*/
+}
+
+a.scrollup::after {
+    font-family: 'Open Sans', sans-serif;
+    content: '^';
+    color: #fff;
+    position: relative;
+    top: 5px;
+    left: 16px;
+    font-size: 30px;
+
+}
 /*------------media------------*/
 @media screen and (max-width:1320px){
     .contacts-nav ul li {display: none;}
