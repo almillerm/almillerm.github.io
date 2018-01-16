@@ -446,6 +446,9 @@ a.scrollup::after {
     font-size: 30px;
 
 }
+
+
+.contacts-nav ul li{ list-style-type: none;}
 /*------------media------------*/
 @media screen and (max-width:1320px){
     .contacts-nav ul li {display: none;}
