@@ -341,7 +341,8 @@ border-radius: 50%;
 padding: 8px;
 cursor: pointer;
 float: right;
-    margin: 10px;}
+    margin: 10px;
+	z-index: 5;}
 
 
 .modal{display: none;
@@ -422,7 +423,7 @@ height: 249px;}
 .active_menu{
 position: fixed;
     top: -30px;
-    left: -300px;
+    left: -330px;
 padding-top: 50px;
 background: #fff;
 width: 300px;
