@@ -532,7 +532,7 @@ max-width: 80%;}
     .donat-section h2{padding: 0 0 30px 0}
     .footer article{ margin: 50px 30px 20px;}
     .about_pets article{padding: 80px 10px;}
-    .modal_item{top: 0;}
+    .modal_item{top: 50px;}
     .pet_img{display: none;}
     
     .pet_about, .pet_list{font-size: 0.6em;}
