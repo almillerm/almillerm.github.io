@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 /* --------------- reset.css --------------- */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
@@ -95,7 +95,8 @@ font-family: 'Cormorant Infant', serif;*/
 .center-align{
 	max-width:1200px; margin:0 auto;}
 
-header {background: rgba(255,255,255,0.9);
+header {top: 0;
+	background: rgba(255,255,255,0.9);
     width: 100%;
     position: fixed;
 font-family: 'Lobster', cursive;
@@ -1079,4 +1080,3 @@ a.scrollup::after {
 }
 @media screen and (max-width:320px){
 	.banner-text{font-size:0.8em;}}
->>>>>>> 1fc9a43cf73c1c1c48efe0a475409669908bba1c
